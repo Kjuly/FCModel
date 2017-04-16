@@ -9,6 +9,12 @@
 #import "FCModel.h"
 #import <sqlite3.h>
 
+#ifdef COCOAPODS
+#import <FMDB/FMDatabase.h>
+#else
+#import "FMDatabase.h"
+#endif
+
 @interface FCModel ()
 + (void)postChangeNotificationWithChangedFields:(NSSet *)changedFields;
 + (void)dataChangedExternally;

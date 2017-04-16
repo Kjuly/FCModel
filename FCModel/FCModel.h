@@ -8,14 +8,10 @@
 #import <Foundation/Foundation.h>
 #include <AvailabilityMacros.h>
 
-#ifdef COCOAPODS
-#import <FMDB/FMDatabase.h>
-#else
-#import "FMDatabase.h"
-#endif
 
 extern NSString * const FCModelException;
 
+@class FMDatabase;
 @class FCModelFieldInfo;
 
 // These notifications use the relevant model's Class as the "object" for convenience so observers can,

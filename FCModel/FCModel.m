@@ -16,6 +16,12 @@
 #import <sqlite3.h>
 #import <Security/Security.h>
 
+#ifdef COCOAPODS
+#import <FMDB/FMDatabase.h>
+#else
+#import "FMDatabase.h"
+#endif
+
 NSString * const FCModelException = @"FCModelException";
 NSString * const FCModelChangeNotification = @"FCModelChangeNotification";
 NSString * const FCModelInstanceKey = @"FCModelInstanceKey";
