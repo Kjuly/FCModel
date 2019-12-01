@@ -7,6 +7,7 @@
 
 #import "FCModelDatabase.h"
 #import "FCModel.h"
+#import "FMDatabase.h"
 #import <sqlite3.h>
 
 @interface FCModel ()

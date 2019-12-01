@@ -7,11 +7,7 @@
 
 #import <Foundation/Foundation.h>
 
-#ifdef COCOAPODS
-#import <FMDB/FMDatabase.h>
-#else
-#import "FMDatabase.h"
-#endif
+@class FMDatabase;
 
 @interface FCModelDatabase : NSObject
 
