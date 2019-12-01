@@ -14,6 +14,13 @@
 #import <sqlite3.h>
 #import <Security/Security.h>
 
+#ifdef COCOAPODS
+#import <FMDB/FMDatabase.h>
+#else
+@import FMDB.FMDatabase;
+#endif
+
+
 //#define QUERY_PROFILING
 
 #ifdef QUERY_PROFILING
