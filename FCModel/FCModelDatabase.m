@@ -12,7 +12,7 @@
 #ifdef COCOAPODS
 #import <FMDB/FMDatabase.h>
 #else
-#import "FMDatabase.h"
+@import FMDB.FMDatabase;
 #endif
 
 @interface FCModel ()
